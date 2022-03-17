@@ -19,3 +19,7 @@ yo9no3ZkefkWBHLFfduxL1pgFMZNFNxhuxpkztjqYedTHB4UvBatUjM (213 bytes)
 2j9avAyvcTfuMwCGed5tv2eomTELPt4o3r4btZYML4skBmdhvEQNhRSdKcCo4F6uHmrbGt8xbXtyrQx\
 BASJZFipJv52mncgZHTpWv1Vn5dHgU5SbYH14hbF1WuTrAG2iVJU4g5Wawd (138 bytes)
 ```
+
+For reference:
+* The raw Base64-JSON encoding of the above is about 450 bytes
+* A default Kube Service Account JWT is about 550 bytes
