@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option go_package = "github.com/banks/proto-play/playpb";
+
+message Token {
+    //reserve region_endpoint = 4;
+ 
+    string cluster_id = 1; // project/724a8c8b-d01b-4a50-9a27-1e7cc8377292/hashicorp.waypoint.entrypoint/web
+    bytes sp_client_id = 2;
+    bytes sp_client_secret = 3;
+}
+
+enum ResourceType {
+    UNKNOWN = 0;
+    WP_ENTRYPOINT = 1; //hashicorp.waypoint.entrypoint
+    CSL_CLUSTER = 2;
+}
+
+message Token2 {
+    //reserve region_endpoint = 4;
+ 
+    bytes project_id = 1;
+    ResourceType resourceType = 2;
+    string resource_id = 3;
+    bytes sp_client_id = 4;
+    bytes sp_client_secret = 5;
+}
